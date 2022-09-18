@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+			<title> TheDarkPlace </title>
+		</head>
+		<link rel="stylesheet" href="./styles.css">
+			<body>
+				<h1> The Dark Place </h1>
+				<p> Welcome stranger... </p>
+				<p> Do you wish to play? </p>
+				<button onclick='gameStart()'>yes</button>
+				<button onclick='noGame()'>no</button>
+				<p> CAUTION: Refreshing the page will reset your progress! </p>
+				<p id='gameButton'/>
+				<div>
+					<button onclick='firstChoice1()'>Call out for help</button>
+					<button onclick='firstChoice2()'>Look around</button>
+					<p id='choice1'/>
+					<p id='choice2'/>
+					<div>
+					<button onclick='secondChoice1()'>Investigate the sound</button>
+					<button onclick='secondChoice2()'>Run</button>
+					<button onclick='secondChoice3()'>Defend yourself</button>
+					<p id='choice3'/>
+					<p id='choice4'/>
+					<p id='choice5'/>
+					<div>
+						<script> 
+const gameStart = () => {document.getElementById('gameButton').innerHTML = "You awaken from a deep slumber. It's dark and you don't know where you are. What do you do? <br> Call out for help or Look around?";
+}
+const noGame = () => {window.location = 'https://google.com';
+};
+const firstChoice1 = () => {document.getElementById('choice1').innerHTML = "You scream into the void. For a while you only hear silence. Then, suddenly you hear a low growl. What do you do? <br> Run or Investigate the sound?";
+}
+const firstChoice2 = () => {document.getElementById('choice2').innerHTML = "You get up and start walking around. It's too dark to see anything, so you attempt to feel your way around. As you are walking you bump into something. There is a creature in the darkness. It growls at you. What do you do? <br> Run or Defend yourself?";
+}
+const secondChoice1 = () => {document.getElementById('choice3').innerHTML = "You approach the direction of the sound. At first you think that it must have been some kind of an animal. However, as you get closer you realise that this is something much more sinister. Before you can react the creature attacks you. Slowly, the darkness consumess you. End 1";
+}
+const secondChoice2 = () => {document.getElementById('choice4').innerHTML = "The growl has scared you immensely. It didn't sound like a person or an animal. Yet there was something feral about it. You start running. You keep running for a long time, but you can't seem to find a way out. The creature catches up with you. Slowly, the darkness consumess you. End 2";
+}
+const secondChoice3 = () => {document.getElementById('choice5').innerHTML = "You notice what looks like a sword on the ground. Quickly, you pick it up and point it towards the creature. The creature charges at you. You hold the sword steadily as it pierces the creatures chest. It's dead. You notice a door opening nearby. You walk through it. Light envelops you. You are free. End 3";  
+}
+</script>
+								</body>
+							</html>		
