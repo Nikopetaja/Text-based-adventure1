@@ -85,16 +85,16 @@ const secondChoice3 = () => {document.getElementById('choice5').innerHTML = "You
 													<div class="row">
 														<div class="col">
 															<button onclick='c2secondChoice1()'>Investigate</button>
-															</div>
-															<div class="col">
+														</div>
+														<div class="col">
 															<button onclick='c2secondChoice2()'>Walk away</button>
-															</div>
-															</div>
-															</div>
-															<p id='choice8'/>
-															<p id='choice9'/>
-															<div>
-																<script>
+														</div>
+													</div>
+												</div>
+												<p id='choice8'/>
+												<p id='choice9'/>
+												<div>
+													<script>
 const c2firstChoice1 = () => {document.getElementById('choice6').innerHTML = "You hesitate for a moment. However, it doesn't take long for your curiosity to overpower your fear. You have to find out who's out there. You open the door and walk outside, but notice it is too dark to see anything. If only you had brought something to light the way. You wonder around in the darkness. Completely unarmed you stand no chance against the darkness. Slowly, the darkness consumes you. End 1";
 }
 const c2firstChoice2 = () => {document.getElementById('choice7').innerHTML = "You decide to stay in your room for just a little longer. You look around and notice some useful items. You pick up a bag from the floor. You find a sword and a lantern. You pack your things before walking up to the door once more and leaving. Once you get outside you notice that it's dark. You take the lantern from your bag and light it. The light doesn't reach very far, but atleast you can see where you are stepping. You walk on until you start hearing distinct voices. The language they speak is foreign to you. What do you do? <br> Investigate or Walk away?"; 
@@ -104,9 +104,57 @@ const c2secondChoice1 = () => {document.getElementById('choice8').innerHTML = "Y
 const c2secondChoice2 = () => {document.getElementById('choice9').innerHTML = "You don't want to get involved with whatever that noice is about. It's much better to try to survive on your own anyway. You start walking away from the voices. You reach a cave. It's cold and you could use some shelter, so you head inside. Inside the cave is warm and comfortable. You decide to rest your eyes for a moment. As you sleep your lantern goes out. Slowly, the darkness consumess you. End 3"; 
 }
 </script>
-																	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"/>
-																	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"/>
-																	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"/>
-																</body>
-															</body>
-														</html>		
+														<h1> Chapter 3 </h1>
+														<p> After sitting with the creatures for a while you start to get comfortable. You know nothing about these creatures. Their language is also unintelligible. <br> They do seem friendly and they have treated you well. Maybe they can be befriended. Suddenly you hear movement from the darkness. <br> The sound has startled your new friends. Before you know it something comes charging out of the darkness. What do you do? Fight or ask for help? </p>
+																<div class="container text-center">
+																	<div class="row">
+																		<div class="col">
+																			<button onclick='c3firstChoice1()'>Fight</button>
+																		</div>
+																		<div class="col">
+																			<button onclick='c3firstChoice2()'>Ask for help</button>
+																		</div>
+																	</div>
+																</div>
+																<p id='choice10'/>
+																<p id='choice11'/>
+																<div class="container text-center">
+																	<div class="row">
+																		<div class="col">
+																			<button onclick='c3secondChoice1()'>Help</button>
+																		</div>
+																		<div class="col">
+																			<button onclick='c3secondChoice2()'>Give up</button>
+																		</div>
+																	</div>
+																</div>
+																<p id='choice12'/>
+																<p id='choice13'/>
+																<div>
+																	<div class="container text-center">
+																		<div class="row">
+																			<div class="col">
+																				<button onclick='c3thirdChoice1()'>Stand up against the darkness</button>
+																			</div>
+																		</div>
+																	</div>
+																	<p id='choice14'/>
+																	<div>
+																		<script>
+																					const c3firstChoice1 = () => {document.getElementById('choice10').innerHTML = "You do what you did last you came across this creature. You raise your sword and brace. This time the creature is smarter. <br> It dodges your blade and moves toward the friendly creatures. What do you do? Help or give up?";
+																					}
+																					const c3firstChoice2 = () => {document.getElementById('choice11').innerHTML = "You turn around and face your new friends. They look terrified. You yell at them pleading for help. They don't seem to understand you at first. <br> Quickly though they look at eachother and rush to your side. They pick up sticks and stones and brace for the dark creature.";
+																					}
+																					const c3secondChoice1 = () => {document.getElementById('choice12').innerHTML = "You turn around and start running towards your friends. Surprisingly you manage to outrun the creature and get to your friends first. <br> Once you reach you friends they have already picked up sticks and stones for weapons. Together you brace for the dark creature.";
+																					}
+																					const c3secondChoice2 = () => {document.getElementById('choice13').innerHTML = "You feel yourself getting heavier and weaker. First you lay down your sword. The you fall to your knees and eventually you lay all the way down. <br> You don't know what happens to your friends. In the end it doesn't really matter. The darkness consumes you. End 1";
+																					}
+																					const c3thirdChoice1 = () => {document.getElementById('choice14').innerHTML = "You and your new friends brace for the creature together. You feel terrified. This is it the same creature that has been tormenting you so far is after you yet again. <br> But this time you are not alone. You have your friends with you. And even though they also feel scared together there is nothing you can't face. <br> After gaining speed the creature lunges at you. You manage to strike the creature with your sword stopping it in it's tracks. Once the creature is no longer moving you and your friends attack it with everything you've got. <br> Soon the creature is defeated and life goes on peacefully. The End."; 
+																					}
+																					</script>
+																									<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"/>
+																									<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"/>
+																									<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"/>
+																								</body>
+																							</body>
+																						</html>		
